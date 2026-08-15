@@ -1,23 +1,23 @@
 @font-face {
-  font-family: "Inter";
-  src: url("../fonts/Inter-Variable.ttf") format("truetype");
-  font-weight: 100 900;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Inter";
+    src: url("../fonts/Inter-Variable.ttf") format("truetype");
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-  font-family: "Roboto Slab";
-  src: url("../fonts/RobotoSlab-Variable.ttf") format("truetype");
-  font-weight: 100 900;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Roboto Slab";
+    src: url("../fonts/RobotoSlab-Variable.ttf") format("truetype");
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-  font-family: "JetBrains Mono";
-  src: url("../fonts/JetBrainsMono-Variable.ttf") format("truetype");
-  font-weight: 100 800;
-  font-style: normal;
-  font-display: swap;
+    font-family: "JetBrains Mono";
+    src: url("../fonts/JetBrainsMono-Variable.ttf") format("truetype");
+    font-weight: 100 800;
+    font-style: normal;
+    font-display: swap;
 }
