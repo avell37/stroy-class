@@ -1,0 +1,74 @@
+:root {
+  --color-bg: #ffffff;
+  --color-primary: #1a1a1a;
+  --color-accent: #d95f02;
+  --color-bg-secondary: #f4f4f2;
+  --color-text-muted: #6b6b6b;
+  --color-border: rgba(0, 0, 0, 0.1);
+
+  --font-heading: "Roboto Slab", serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --fw-heading: 700;
+  --fw-heading-strong: 800;
+  --fw-regular: 400;
+  --fw-medium: 500;
+
+  --fs-h1: clamp(3rem, 4vw + 2rem, 4.5rem);
+  --fs-h2: clamp(2.5rem, 3vw + 1.5rem, 3.5rem);
+  --fs-body: 1rem;
+  --fs-body-sm: 0.875rem;
+  --fs-body-lg: 1.125rem;
+  --fs-label: 0.75rem;
+  --fs-label-sm: 0.6875rem;
+
+  --ls-label: 0.2em;
+}
+
+body {
+  font-family: var(--font-body);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-body);
+  color: var(--color-primary);
+  background: var(--color-bg);
+}
+
+h1,
+h2,
+h3,
+.heading {
+  font-family: var(--font-heading);
+  font-weight: var(--fw-heading);
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: var(--fs-h1);
+  font-weight: var(--fw-heading-strong);
+}
+
+h2 {
+  font-size: var(--fs-h2);
+}
+
+.text-muted {
+  color: var(--color-text-muted);
+}
+
+.text-medium {
+  font-weight: var(--fw-medium);
+}
+
+.label {
+  font-family: var(--font-mono);
+  font-size: var(--fs-label);
+  font-weight: var(--fw-regular);
+  letter-spacing: var(--ls-label);
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+.page {
+  min-height: 100%;
+}
