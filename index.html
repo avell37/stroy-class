@@ -4,12 +4,73 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="" />
-        <title>Stroyclass</title>
+        <title>СтройКласс</title>
         <link rel="stylesheet" href="css/reset.css" />
         <link rel="stylesheet" href="css/fonts.css" />
         <link rel="stylesheet" href="css/style.css" />
+        <script src="js/main.js" defer></script>
     </head>
     <body>
-        <div class="page"></div>
+        <div class="page">
+            <header class="header">
+                <div class="header__container">
+                    <a class="header__logo" href="/">
+                        <img
+                            src="./images/icons/logo.svg"
+                            alt=""
+                            width="32"
+                            height="32"
+                        />
+                        <span class="header__logo-text">СтройКласс</span>
+                    </a>
+                    <div class="header__menu" id="header-menu">
+                        <nav class="header__nav">
+                            <ul class="header__nav-list">
+                                <li class="header__nav-item">
+                                    <a href="#" class="header__nav-link">
+                                        Услуги
+                                    </a>
+                                </li>
+                                <li class="header__nav-item">
+                                    <a href="#" class="header__nav-link">
+                                        О компании
+                                    </a>
+                                </li>
+                                <li class="header__nav-item">
+                                    <a href="#" class="header__nav-link">
+                                        Проекты
+                                    </a>
+                                </li>
+                                <li class="header__nav-item">
+                                    <a href="#" class="header__nav-link">
+                                        Отзывы
+                                    </a>
+                                </li>
+                                <li class="header__nav-item">
+                                    <a href="#" class="header__nav-link">
+                                        Контакты
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <button type="button" class="header__button">
+                            Получить смету
+                        </button>
+                    </div>
+                    <button
+                        class="header__burger"
+                        type="button"
+                        aria-expanded="false"
+                        aria-controls="header-menu"
+                        aria-label="Открыть меню"
+                    >
+                        <span class="header__burger-line"></span>
+                        <span class="header__burger-line"></span>
+                        <span class="header__burger-line"></span>
+                    </button>
+                </div>
+                <div class="header__overlay" data-menu-close></div>
+            </header>
+        </div>
     </body>
 </html>
