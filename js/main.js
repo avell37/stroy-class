@@ -2,6 +2,8 @@ const header = document.querySelector(".header");
 const burger = document.querySelector(".header__burger");
 const menu = document.querySelector(".header__menu");
 const desktopQuery = window.matchMedia("(min-width: 1024px)");
+const form = document.querySelector(".contacts__form");
+const box = document.querySelector(".contacts__box");
 
 if (header && burger && menu) {
     const setOpen = (open) => {
@@ -31,14 +33,29 @@ if (header && burger && menu) {
     });
 
     document.addEventListener("keydown", (event) => {
-        if (event.key === "Escape") {
+        if (event.key === "Escape" && header.classList.contains("is-open")) {
             setOpen(false);
+            burger.focus();
         }
     });
 
     desktopQuery.addEventListener("change", (event) => {
         if (event.matches) {
             setOpen(false);
+        }
+    });
+}
+
+if (form && box) {
+    const success = box.querySelector(".contacts__success");
+
+    form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        box.classList.add("is-sent");
+        form.inert = true;
+
+        if (success) {
+            success.focus();
         }
     });
 }

@@ -7,7 +7,8 @@
             name="description"
             content="СтройКласс — строительная компания в Москве. Строительство под ключ, капитальный ремонт и отделка. 16 лет опыта, 840 сданных объектов."
         />
-        <title>СтройКласс</title>
+        <title>СтройКласс — строительство и ремонт в Москве</title>
+        <link rel="icon" href="./images/icons/logo.svg" type="image/svg+xml" />
         <link rel="stylesheet" href="css/reset.css" />
         <link rel="stylesheet" href="css/fonts.css" />
         <link rel="stylesheet" href="css/style.css" />
@@ -17,17 +18,21 @@
         <div class="page">
             <header class="header">
                 <div class="header__container container">
-                    <a class="header__logo" href="/">
+                    <a class="header__logo" href="./">
                         <img
                             src="./images/icons/logo.svg"
                             alt=""
+                            class="header__logo-img"
                             width="32"
                             height="32"
                         />
                         <span class="header__logo-text">СтройКласс</span>
                     </a>
                     <div class="header__menu" id="header-menu">
-                        <nav class="header__nav">
+                        <nav
+                            class="header__nav"
+                            aria-label="Основная навигация"
+                        >
                             <ul class="header__nav-list">
                                 <li class="header__nav-item">
                                     <a
@@ -86,9 +91,14 @@
                 </div>
                 <div class="header__overlay" data-menu-close></div>
             </header>
-            <main class="main">
+            <main class="main" id="main">
                 <section class="hero">
-                    <img class="hero__image" src="./images/hero.png" alt="" />
+                    <img
+                        class="hero__image"
+                        src="./images/hero.png"
+                        alt=""
+                        fetchpriority="high"
+                    />
                     <div class="hero__overlay"></div>
                     <div class="hero__container container">
                         <div class="hero__info">
@@ -241,7 +251,9 @@
                             <img
                                 src="./images/about.png"
                                 class="about__img"
-                                alt=""
+                                alt="Строители на объекте"
+                                loading="lazy"
+                                decoding="async"
                             />
                             <div class="about__badge">
                                 <p class="about__badge-value">16</p>
@@ -342,6 +354,8 @@
                                     src="./images/project-1.png"
                                     class="projects__img"
                                     alt="ЖК «Северная звезда»"
+                                    loading="lazy"
+                                    decoding="async"
                                 />
                                 <div class="projects__caption">
                                     <span class="projects__caption-label">
@@ -351,7 +365,7 @@
                                         ЖК «Северная звезда»
                                     </p>
                                 </div>
-                                <div class="projects__hover">
+                                <div class="projects__hover" aria-hidden="true">
                                     <span class="label">
                                         Жилой комплекс · 2024
                                     </span>
@@ -365,6 +379,8 @@
                                     src="./images/project-2.png"
                                     class="projects__img"
                                     alt="Офисный центр «Лидер»"
+                                    loading="lazy"
+                                    decoding="async"
                                 />
                                 <div class="projects__caption">
                                     <span class="projects__caption-label">
@@ -374,7 +390,7 @@
                                         Офисный центр «Лидер»
                                     </p>
                                 </div>
-                                <div class="projects__hover">
+                                <div class="projects__hover" aria-hidden="true">
                                     <span class="label">
                                         Коммерческое строительство · 2024
                                     </span>
@@ -388,6 +404,8 @@
                                     src="./images/project-3.png"
                                     class="projects__img"
                                     alt="Коттедж в Подмосковье"
+                                    loading="lazy"
+                                    decoding="async"
                                 />
                                 <div class="projects__caption">
                                     <span class="projects__caption-label">
@@ -397,7 +415,7 @@
                                         Коттедж в Подмосковье
                                     </p>
                                 </div>
-                                <div class="projects__hover">
+                                <div class="projects__hover" aria-hidden="true">
                                     <span class="label">
                                         Частный дом · 2023
                                     </span>
@@ -411,6 +429,8 @@
                                     src="./images/project-4.png"
                                     class="projects__img"
                                     alt="Ресторан «Берег»"
+                                    loading="lazy"
+                                    decoding="async"
                                 />
                                 <div class="projects__caption">
                                     <span class="projects__caption-label">
@@ -420,7 +440,7 @@
                                         Ресторан «Берег»
                                     </p>
                                 </div>
-                                <div class="projects__hover">
+                                <div class="projects__hover" aria-hidden="true">
                                     <span class="label">
                                         Коммерческий ремонт · 2023
                                     </span>
@@ -434,6 +454,8 @@
                                     src="./images/project-5.png"
                                     class="projects__img"
                                     alt="Квартира в ЖК «Маяк»"
+                                    loading="lazy"
+                                    decoding="async"
                                 />
                                 <div class="projects__caption">
                                     <span class="projects__caption-label">
@@ -443,7 +465,7 @@
                                         Квартира в ЖК «Маяк»
                                     </p>
                                 </div>
-                                <div class="projects__hover">
+                                <div class="projects__hover" aria-hidden="true">
                                     <span class="label">
                                         Капитальный ремонт · 2023
                                     </span>
@@ -457,6 +479,8 @@
                                     src="./images/project-6.png"
                                     class="projects__img"
                                     alt="Фасад бизнес-центра"
+                                    loading="lazy"
+                                    decoding="async"
                                 />
                                 <div class="projects__caption">
                                     <span class="projects__caption-label">
@@ -466,7 +490,7 @@
                                         Фасад бизнес-центра
                                     </p>
                                 </div>
-                                <div class="projects__hover">
+                                <div class="projects__hover" aria-hidden="true">
                                     <span class="label">
                                         Фасадные работы · 2022
                                     </span>
@@ -540,7 +564,235 @@
                         </ul>
                     </div>
                 </section>
+                <section class="contacts" id="contacts">
+                    <div class="contacts__container container">
+                        <div class="contacts__info">
+                            <span class="label">Свяжитесь с нами</span>
+                            <h2 class="contacts__title">
+                                Обсудим
+                                <br />
+                                ваш проект
+                            </h2>
+                            <p class="contacts__description">
+                                Оставьте заявку — перезвоним в течение 30 минут,
+                                проведём бесплатный выезд и подготовим смету без
+                                обязательств.
+                            </p>
+                            <address class="contacts__address">
+                                <ul class="contacts__list">
+                                    <li class="contacts__item">
+                                        <div class="contacts__icon">
+                                            <img
+                                                src="./images/icons/phone.svg"
+                                                alt=""
+                                                class="contacts__img"
+                                            />
+                                        </div>
+                                        <div class="contacts__details">
+                                            <span class="contacts__label">
+                                                Телефон
+                                            </span>
+                                            <a
+                                                class="contacts__text"
+                                                href="tel:+74951234567"
+                                            >
+                                                +7 (495) 123-45-67
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="contacts__item">
+                                        <div class="contacts__icon">
+                                            <img
+                                                src="./images/icons/mail.svg"
+                                                alt=""
+                                                class="contacts__img"
+                                            />
+                                        </div>
+                                        <div class="contacts__details">
+                                            <span class="contacts__label">
+                                                E-Mail
+                                            </span>
+                                            <a
+                                                class="contacts__text"
+                                                href="mailto:info@stroyklass.ru"
+                                            >
+                                                info@stroyklass.ru
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="contacts__item">
+                                        <div class="contacts__icon">
+                                            <img
+                                                src="./images/icons/map-pin.svg"
+                                                alt=""
+                                                class="contacts__img"
+                                            />
+                                        </div>
+                                        <div class="contacts__details">
+                                            <span class="contacts__label">
+                                                Адрес
+                                            </span>
+                                            <span class="contacts__text">
+                                                Москва, ул. Строительная, д. 12
+                                            </span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </address>
+                        </div>
+                        <div class="contacts__box">
+                            <form class="contacts__form">
+                                <div class="contacts__field">
+                                    <label
+                                        class="contacts__field-label"
+                                        for="contacts-name"
+                                    >
+                                        Ваше имя *
+                                    </label>
+                                    <input
+                                        class="contacts__input"
+                                        id="contacts-name"
+                                        type="text"
+                                        name="name"
+                                        autocomplete="name"
+                                        placeholder="Иван Иванов"
+                                        required
+                                    />
+                                </div>
+                                <div class="contacts__field">
+                                    <label
+                                        class="contacts__field-label"
+                                        for="contacts-phone"
+                                    >
+                                        Телефон *
+                                    </label>
+                                    <input
+                                        class="contacts__input"
+                                        id="contacts-phone"
+                                        type="tel"
+                                        name="phone"
+                                        autocomplete="tel"
+                                        placeholder="+7 (___) ___-__-__"
+                                        required
+                                    />
+                                </div>
+                                <div class="contacts__field">
+                                    <label
+                                        class="contacts__field-label"
+                                        for="contacts-object"
+                                    >
+                                        Описание объекта
+                                    </label>
+                                    <textarea
+                                        class="contacts__textarea"
+                                        id="contacts-object"
+                                        name="object"
+                                        rows="5"
+                                        placeholder="Расскажите о вашем проекте: тип объекта, площадь, пожелания..."
+                                    ></textarea>
+                                </div>
+                                <button
+                                    class="contacts__submit button-primary"
+                                    type="submit"
+                                >
+                                    Отправить заявку
+                                    <img
+                                        src="./images/icons/arrow-right.svg"
+                                        class="arrow"
+                                        alt=""
+                                        width="16"
+                                        height="16"
+                                    />
+                                </button>
+                                <span class="contacts__note">
+                                    Нажимая кнопку, вы соглашаетесь с политикой
+                                    конфиденциальности. Данные не передаются
+                                    третьим лицам.
+                                </span>
+                            </form>
+                            <div
+                                class="contacts__success"
+                                role="status"
+                                aria-live="polite"
+                                tabindex="-1"
+                            >
+                                <div class="contacts__success-icon">
+                                    <img
+                                        src="./images/icons/check-circle.svg"
+                                        alt=""
+                                        class="contacts__success-img"
+                                    />
+                                </div>
+                                <h3 class="contacts__success-title">
+                                    Заявка отправлена!
+                                </h3>
+                                <p class="contacts__success-text">
+                                    Перезвоним в течение 30 минут в рабочее
+                                    время (пн–пт, 9:00–19:00).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </main>
+            <footer class="footer">
+                <div class="footer__container container">
+                    <a class="footer__logo" href="./">
+                        <img
+                            src="./images/icons/logo.svg"
+                            alt=""
+                            class="footer__logo-img"
+                            width="32"
+                            height="32"
+                        />
+                        <span class="footer__logo-text">СтройКласс</span>
+                    </a>
+                    <div class="footer__menu">
+                        <nav
+                            class="footer__nav"
+                            aria-label="Навигация по странице"
+                        >
+                            <ul class="footer__nav-list">
+                                <li class="footer__nav-item">
+                                    <a
+                                        href="#services"
+                                        class="footer__nav-link"
+                                    >
+                                        Услуги
+                                    </a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="#about" class="footer__nav-link">
+                                        О компании
+                                    </a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a
+                                        href="#projects"
+                                        class="footer__nav-link"
+                                    >
+                                        Проекты
+                                    </a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="#reviews" class="footer__nav-link">
+                                        Отзывы
+                                    </a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a
+                                        href="#contacts"
+                                        class="footer__nav-link"
+                                    >
+                                        Контакты
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <p class="footer__copy">© 2026 СтройКласс</p>
+                </div>
+            </footer>
         </div>
     </body>
 </html>
