@@ -3,7 +3,10 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="" />
+        <meta
+            name="description"
+            content="СтройКласс — строительная компания в Москве. Строительство под ключ, капитальный ремонт и отделка. 16 лет опыта, 840 сданных объектов."
+        />
         <title>СтройКласс</title>
         <link rel="stylesheet" href="css/reset.css" />
         <link rel="stylesheet" href="css/fonts.css" />
@@ -40,28 +43,34 @@
                                     </a>
                                 </li>
                                 <li class="header__nav-item">
-                                    <a href="#" class="header__nav-link">
+                                    <a
+                                        href="#projects"
+                                        class="header__nav-link"
+                                    >
                                         Проекты
                                     </a>
                                 </li>
                                 <li class="header__nav-item">
-                                    <a href="#" class="header__nav-link">
+                                    <a href="#reviews" class="header__nav-link">
                                         Отзывы
                                     </a>
                                 </li>
                                 <li class="header__nav-item">
-                                    <a href="#" class="header__nav-link">
+                                    <a
+                                        href="#contacts"
+                                        class="header__nav-link"
+                                    >
                                         Контакты
                                     </a>
                                 </li>
                             </ul>
                         </nav>
-                        <button
-                            type="button"
+                        <a
+                            href="#contacts"
                             class="header__button button-primary"
                         >
                             Получить смету
-                        </button>
+                        </a>
                     </div>
                     <button
                         class="header__burger"
@@ -99,12 +108,19 @@
                                 Гарантия на все виды работ.
                             </p>
                             <div class="hero__actions">
-                                <button
-                                    type="button"
+                                <a
+                                    href="#contacts"
                                     class="hero__button button-primary"
                                 >
                                     Получить смету
-                                </button>
+                                    <img
+                                        src="./images/icons/arrow-right.svg"
+                                        class="arrow"
+                                        alt=""
+                                        width="16"
+                                        height="16"
+                                    />
+                                </a>
                                 <a
                                     href="#projects"
                                     class="hero__button button-secondary"
@@ -302,6 +318,226 @@
                                 </li>
                             </ul>
                         </div>
+                    </div>
+                </section>
+                <section class="projects" id="projects">
+                    <div class="projects__container container">
+                        <div class="projects__info">
+                            <div class="projects__heading">
+                                <span class="label">Портфолио</span>
+                                <h2 class="projects__title">
+                                    Реализованные
+                                    <br />
+                                    проекты
+                                </h2>
+                            </div>
+                            <p class="projects__lead">
+                                Жилые, коммерческие и частные объекты — в Москве
+                                и Подмосковье.
+                            </p>
+                        </div>
+                        <ul class="projects__list">
+                            <li class="projects__item">
+                                <img
+                                    src="./images/project-1.png"
+                                    class="projects__img"
+                                    alt="ЖК «Северная звезда»"
+                                />
+                                <div class="projects__caption">
+                                    <span class="projects__caption-label">
+                                        Жилой комплекс
+                                    </span>
+                                    <p class="projects__caption-title">
+                                        ЖК «Северная звезда»
+                                    </p>
+                                </div>
+                                <div class="projects__hover">
+                                    <span class="label">
+                                        Жилой комплекс · 2024
+                                    </span>
+                                    <p class="projects__hover-title">
+                                        ЖК «Северная звезда»
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="projects__item">
+                                <img
+                                    src="./images/project-2.png"
+                                    class="projects__img"
+                                    alt="Офисный центр «Лидер»"
+                                />
+                                <div class="projects__caption">
+                                    <span class="projects__caption-label">
+                                        Коммерческое строительство
+                                    </span>
+                                    <p class="projects__caption-title">
+                                        Офисный центр «Лидер»
+                                    </p>
+                                </div>
+                                <div class="projects__hover">
+                                    <span class="label">
+                                        Коммерческое строительство · 2024
+                                    </span>
+                                    <p class="projects__hover-title">
+                                        Офисный центр «Лидер»
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="projects__item">
+                                <img
+                                    src="./images/project-3.png"
+                                    class="projects__img"
+                                    alt="Коттедж в Подмосковье"
+                                />
+                                <div class="projects__caption">
+                                    <span class="projects__caption-label">
+                                        Частный дом
+                                    </span>
+                                    <p class="projects__caption-title">
+                                        Коттедж в Подмосковье
+                                    </p>
+                                </div>
+                                <div class="projects__hover">
+                                    <span class="label">
+                                        Частный дом · 2023
+                                    </span>
+                                    <p class="projects__hover-title">
+                                        Коттедж в Подмосковье
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="projects__item">
+                                <img
+                                    src="./images/project-4.png"
+                                    class="projects__img"
+                                    alt="Ресторан «Берег»"
+                                />
+                                <div class="projects__caption">
+                                    <span class="projects__caption-label">
+                                        Коммерческий ремонт
+                                    </span>
+                                    <p class="projects__caption-title">
+                                        Ресторан «Берег»
+                                    </p>
+                                </div>
+                                <div class="projects__hover">
+                                    <span class="label">
+                                        Коммерческий ремонт · 2023
+                                    </span>
+                                    <p class="projects__hover-title">
+                                        Ресторан «Берег»
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="projects__item">
+                                <img
+                                    src="./images/project-5.png"
+                                    class="projects__img"
+                                    alt="Квартира в ЖК «Маяк»"
+                                />
+                                <div class="projects__caption">
+                                    <span class="projects__caption-label">
+                                        Капитальный ремонт
+                                    </span>
+                                    <p class="projects__caption-title">
+                                        Квартира в ЖК «Маяк»
+                                    </p>
+                                </div>
+                                <div class="projects__hover">
+                                    <span class="label">
+                                        Капитальный ремонт · 2023
+                                    </span>
+                                    <p class="projects__hover-title">
+                                        Квартира в ЖК «Маяк»
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="projects__item">
+                                <img
+                                    src="./images/project-6.png"
+                                    class="projects__img"
+                                    alt="Фасад бизнес-центра"
+                                />
+                                <div class="projects__caption">
+                                    <span class="projects__caption-label">
+                                        Фасадные работы
+                                    </span>
+                                    <p class="projects__caption-title">
+                                        Фасад бизнес-центра
+                                    </p>
+                                </div>
+                                <div class="projects__hover">
+                                    <span class="label">
+                                        Фасадные работы · 2022
+                                    </span>
+                                    <p class="projects__hover-title">
+                                        Фасад бизнес-центра
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="reviews" id="reviews">
+                    <div class="reviews__container container">
+                        <div class="reviews__info">
+                            <span class="label">Отзывы</span>
+                            <h2 class="reviews__title">
+                                Что говорят
+                                <br />
+                                клиенты
+                            </h2>
+                        </div>
+                        <ul class="reviews__list">
+                            <li class="reviews__item">
+                                <p class="reviews__text">
+                                    «Отличная команда — сдали объект точно в
+                                    срок, качество на высоте. Бригада
+                                    чистоплотная, прораб держит руку на пульсе.
+                                    Уже рекомендуем знакомым.»
+                                </p>
+                                <div class="reviews__meta">
+                                    <span class="reviews__author">
+                                        Алексей Воронов
+                                    </span>
+                                    <span class="reviews__role">
+                                        Владелец ресторана
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="reviews__item">
+                                <p class="reviews__text">
+                                    «Делали ремонт квартиры под ключ. Очень
+                                    довольны результатом: всё чисто, аккуратно,
+                                    по смете. Прораб всегда на связи, решал
+                                    вопросы оперативно.»
+                                </p>
+                                <div class="reviews__meta">
+                                    <span class="reviews__author">
+                                        Марина Соколова
+                                    </span>
+                                    <span class="reviews__role">
+                                        Частный заказчик
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="reviews__item">
+                                <p class="reviews__text">
+                                    «Строили нам торговый павильон — быстро, в
+                                    рамках бюджета, без лишних согласований.
+                                    Впечатлила слаженность команды. Будем
+                                    работать ещё.»
+                                </p>
+                                <div class="reviews__meta">
+                                    <span class="reviews__author">
+                                        Игорь Громов
+                                    </span>
+                                    <span class="reviews__role">
+                                        Директор ТЦ «Атлант»
+                                    </span>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </section>
             </main>
